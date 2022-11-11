@@ -1,8 +1,6 @@
-# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
+import random
 key=0
 encr=0
 decr=0
@@ -13,9 +11,12 @@ msg=0
 isEncrypt = False
 
 def rkg():
-
+    value = random.randint(100,100000)
+    return value
 def encrypt(msg,key):
 
 def decrypt(key,msg):
+
+If isEncrypt = True:
 
 
