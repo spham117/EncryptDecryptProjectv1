@@ -1,30 +1,17 @@
-
-
 import random
-key=0
-encr=0
-decr=0
-alg=0
-out=0
-msg = 0
-#WILL CHANGE VARIABLE TYPE LATER!!!!!!11111!!!111!!!!!111!!!!
-isEncrypt = False
-def rkg():
-    value = random.randint(100,100000)
-    return value
-key = rkg()
-def encrypt(msg,key):
+import string
+def add_letters(org,num):
+    new_word = ''
+    for i in org:
+        randomLetter = "".join(random.choice(string.ascii_letters) for _ in range(num))
+        new_word += i
+        new_word += randomLetter 
+    return new_word
+
+original = input('Enter something you can remember: ')
+for num in range(5,6):
+    #scramble the word using 'num' extra characters
+    scrambled = add_letters(original,num)
+    #output
     
-def decrypt(key,msg):
-
-if isEncrypt:
-    print(key)
-UserInput = input('Type your message here')
-
-msg = UserInput.split()
-
-
-
-
-
-
+    print("Adding",num,'random characters to',original,'->',random.shuffle(scrambled))
