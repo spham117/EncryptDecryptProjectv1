@@ -2,7 +2,6 @@ string = input("enter string: ")
 shift = input("enter shift coefficient(integers): ")
 coefficient = int(shift)
 for i in string:
-    x = (ord(i) * abs(coefficient))+1
+    x = ((ord(i)**2 * abs(coefficient**2))+ coefficient + 1)+ ord(i)*2
     y = str(x)
-    z = ''.join(y)
-    print (z, end=" ")
+    print (hex(y), end="")
