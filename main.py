@@ -25,4 +25,3 @@ def encrypt(string,coefficient,shift,stored_var):
         stored_var +=y
     return(int(stored_var))
 print(hex(encrypt(string,coefficient,shift,stored_var)))
-print(encrypt(string,coefficient,shift,stored_var))
