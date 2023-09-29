@@ -18,4 +18,3 @@ else:
     pend_list2 = list(map(chr,pend_list1))
     list_join = ''.join(pend_list2)
     print(list_join)
-
