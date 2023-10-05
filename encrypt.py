@@ -1,10 +1,10 @@
 
 string = input("enter string: ")
-shift = input("enter shift coefficient(integers < 50): ")
-coefficient = int(shift)
+shift = input("enter shift coefficient(integers =< 31): ")
+coefficient = abs(int(shift))
 even_indices = []
 
-if coefficient <= 50:
+if coefficient <= 31:
     for i in string:
         x = ((ord(i) * coefficient**3) - coefficient**3) * (((len(string)**coefficient)))
         y = str(x+2)
