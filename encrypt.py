@@ -6,7 +6,7 @@ even_indices = []
 
 if coefficient <= 31:
     for i in string:
-        x = ((ord(i) * coefficient**3) - coefficient**3) * (((len(string)*coefficient)))
+        x = (((ord(i) * coefficient**3) - coefficient**3) * (((len(string)*coefficient))))- coefficient**3
         y = str(x+2)
         z = ''.join(y)
         print((z),end=',')
