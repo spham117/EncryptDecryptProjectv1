@@ -4,7 +4,8 @@ import sys
 
 
 encoded_input = input("enter code: ").rstrip(',')
-
+if not re.match("\d+", encoded_input):
+     print ("Error! Only integers allowed!")
 shift = input("enter shift coefficient(integers): ")
 
 coefficient1 = ((encoded_input.count(',')+1) * int(shift))
