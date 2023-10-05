@@ -11,13 +11,13 @@ coefficient1 = ((encoded_input.count(',')+1) * int(shift))
 
 byte_list = encoded_input.split(sep=",",maxsplit=-1)
 byte_list1 = list(map(int,byte_list))
-byte_list2 = [(item//coefficient1)+(int(shift)**3) for item in byte_list1]
+byte_list2 = [(item + coefficient1)+(int(shift)**3) for item in byte_list1]
 
 if not re.match("\d+", shift):
      print ("Error! Only integers allowed!")
 else:
      pend_list = byte_list2
-     pend_list1 = [((val+int(shift)**3)//(int(shift)**3)) for val in pend_list]
+     pend_list1 = [((val+int(shift)**3)//(int(shift)**3)) for val in pend_list]  
      pend_list2 = list(map(chr,pend_list1))
      list_join = ''.join(pend_list2)
      print(list_join)

@@ -2,12 +2,11 @@
 string = input("enter string: ")
 shift = input("enter shift coefficient(integers =< 31): ")
 coefficient = abs(int(shift))
-even_indices = []
 
 if coefficient <= 31:
     for i in string:
-        x = (((ord(i) * coefficient**3) - coefficient**3) * (((len(string)*coefficient))))- coefficient**3
-        y = str(x+2)
+        x = (((ord(i) * coefficient**3) - coefficient**3) - (((len(string)*coefficient))))- coefficient**3
+        y = str(x)
         z = ''.join(y)
         print((z),end=',')
 
