@@ -1,7 +1,7 @@
 
 while input != "":
     string = input("enter string: ")
-    shift = input("enter shift coefficient(integers =< 31): ")
+    shift = input("enter shift coefficient(integers =< 31): ") 
     coefficient = abs(int(shift))
 
     if coefficient <= 31:
